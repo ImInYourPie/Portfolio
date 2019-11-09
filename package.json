@@ -1,0 +1,27 @@
+{
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "My portfolio",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "webpack --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ImInYourPie/Portfolio.git"
+    },
+    "author": "Miguel Melo",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ImInYourPie/Portfolio/issues"
+    },
+    "homepage": "https://github.com/ImInYourPie/Portfolio#readme",
+    "devDependencies": {
+        "webpack": "^4.41.2",
+        "webpack-cli": "^3.3.10"
+    },
+    "dependencies": {
+        "aos": "^2.3.4"
+    }
+}
