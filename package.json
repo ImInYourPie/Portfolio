@@ -24,6 +24,8 @@
         "webpack-cli": "^3.3.10"
     },
     "dependencies": {
-        "aos": "^2.3.4"
+        "aos": "^2.3.4",
+        "file-loader": "^4.2.0",
+        "url-loader": "^2.2.0"
     }
 }

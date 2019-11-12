@@ -1,3 +1,27 @@
+@font-face {
+  font-family: Quicksand;
+  src: url("/dist/assets/fonts/Quicksand-Regular.otf") format("opentype");
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(30deg, #ff3ea5ff, #fddb27ff);
+  border-radius: 10px;
+}
+
+/*  */
+
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +56,60 @@ img {
 }
 
 /* Reusables */
+.container {
+  width: 90%;
+  height: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  position: relative;
+}
 
+.section-heading {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.section-heading h1 {
+  font-size: 3.5rem;
+  color: #00a4ccff;
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.section-heading h1::before,
+.section-heading h1::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.9;
+  background: linear-gradient(30deg, #ff3ea5ff, #fddb27ff);
+}
+
+.section-heading h1::before {
+  width: 10rem;
+  height: 3px;
+  border-radius: 0.8rem;
+}
+
+.section-heading h1::after {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  bottom: -1rem;
+}
+
+.section-heading h6 {
+  font-size: 1.5rem;
+  opacity: 0.3;
+}
+
+/* Background fill TESTING!!! */
+.background-fill {
+}
 /*  */
 
 /* Header */
@@ -72,7 +149,7 @@ li {
 }
 
 .nav-link {
-  font-family: "Roboto", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 5rem;
   padding: 1rem;
 }
@@ -157,5 +234,156 @@ li {
 
 .landing-text h1 {
   font-size: 10rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  background: linear-gradient(30deg, #ff3ea5ff, #fddb27ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  user-select: none;
+  padding: 1rem;
+}
+
+.landing-text h6 {
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: "Quicksand", sans-serif;
+  color: #00a4ccff;
 }
 /*  */
+
+/* Âbout */
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-heading {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0;
+  margin-bottom: 6rem;
+}
+
+.about-heading h1 {
+  font-size: 10rem;
+  opacity: 0.3;
+}
+
+.about-heading h6 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.about-img {
+  flex: 1;
+  margin-right: 5rem;
+  justify-content: center;
+}
+
+.img {
+  width: 100%;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.social-media {
+  margin-top: 5rem;
+}
+
+.social-media i {
+  font-size: 5rem;
+  transition: color 650ms;
+}
+
+.fa-facebook-square:hover {
+  color: #4267b2;
+}
+
+.fa-linkedin:hover {
+  color: #2867b2;
+}
+
+.fa-github-square:hover {
+  color: #6e5494;
+}
+
+.social-media-list {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*  */
+
+/* Skills */
+.my-skills-1 {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 2.5rem;
+  text-align: center;
+}
+
+.my-skills-2 {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 2.5rem;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.skills-list {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.skill h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.icon-container {
+  border-radius: 75%;
+  width: 10rem;
+  height: 10rem;
+  border: 3px solid #fddb27ff;
+  background-color: #ff3ea5ff;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.icon-container i {
+  color: #fddb27ff;
+  font-size: 5rem;
+  margin: auto;
+}
+/*  */
+
+.portfolio-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.portfolio-item:last-child {
+  margin-bottom: 0;
+}
+
+.portfolio-img {
+}
