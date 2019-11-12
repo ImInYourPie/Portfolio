@@ -8,6 +8,12 @@
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/d1ebf8497a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+
     <title>Melo's</title>
   </head>
 
@@ -36,7 +42,7 @@
       <div class="background-fill">
         <div class="container">
           <div class="section-heading">
-            <h1>Skills</h1>
+            <h1>Services</h1>
             <h6>What I can do for you</h6>
           </div>
           <div class="my-skills-1">
@@ -92,7 +98,7 @@
               </ul>
             </div>
           </div>
-          <div class="my-skills-2">
+          <!-- <div class="my-skills-2">
             <div class="skill">
               <div class="icon-container">
                 <i class="fas fa-vial"></i>
@@ -127,7 +133,7 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -140,10 +146,14 @@
         </div>
 
         <div class="portfolio-item">
-          <div class="portfolio-img">
-            <img src="./assets/projects/" alt="image" />
+          <div class="portfolio-img-item has-margin-right">
+            <img
+              class="portfolio-img"
+              src="../dist/assets/stock.jpeg"
+              alt="image"
+            />
             <div class="code-source-demo">
-              <ul>
+              <ul class="code-ul">
                 <li>
                   <a
                     href="https://github.com/ImInYourPie/React-to-Magic"
@@ -175,28 +185,49 @@
               Gathering. This was a solo project.
             </p>
             <h5>The Stack</h5>
-            <ul>
+            <ul class="stack-ul">
               <li class="stack-list">
-                <p>React</p>
+                <p><i class="fab fa-react"></i> React</p>
+              </li>
+              <!-- <li class="stack-list">
+                <p>
+                  <img
+                    class="svg-icon"
+                    src="../dist/assets/icons/redux.svg"
+                    alt="redux-icon"
+                  />
+                  Redux
+                </p>
+              </li> -->
+              <li class="stack-list">
+                <p><i class="fab fa-node-js"></i> Express</p>
               </li>
               <li class="stack-list">
-                <p>Redux</p>
+                <p>
+                  <img
+                    class="svg-icon"
+                    src="../dist/assets/icons/Mongodb.svg"
+                    alt="mongo-icon"
+                  />
+                  MongoDB
+                </p>
               </li>
               <li class="stack-list">
-                <p>Express</p>
-              </li>
-              <li class="stack-list">
-                <p>MongoDB</p>
-              </li>
-              <li class="stack-list">
-                <p>Material-UI</p>
+                <p>
+                  <img
+                    class="svg-icon"
+                    src="../dist//assets/icons/muiicon.png"
+                    alt=""
+                  />
+                  Material-UI
+                </p>
               </li>
             </ul>
           </div>
         </div>
 
         <div class="portfolio-item">
-          <div class="portfolio-description">
+          <div class="portfolio-description has-margin-right">
             <h6>Full Stack</h6>
             <h1>Hydradev Task Manager</h1>
             <h5>The Project</h5>
@@ -208,30 +239,48 @@
               on received email, much more.
             </p>
             <h5>The Stack</h5>
-            <ul>
+            <ul class="stack-ul">
               <li class="stack-list">
-                <p>React</p>
+                <p><i class="fab fa-react"></i> React</p>
               </li>
               <li class="stack-list">
-                <p>Express</p>
+                <p><i class="fab fa-node-js"></i> Express</p>
               </li>
               <li class="stack-list">
-                <p>MongoDB</p>
+                <p>
+                  <img
+                    class="svg-icon"
+                    src="../dist/assets/icons/Mongodb.svg"
+                    alt="mongo-icon"
+                  />
+                  MongoDB
+                </p>
               </li>
               <li class="stack-list">
-                <p>Material-UI</p>
+                <p>
+                  <img
+                    class="svg-icon"
+                    src="../dist//assets/icons/muiicon.png"
+                    alt=""
+                  />
+                  Material-UI
+                </p>
               </li>
             </ul>
           </div>
-          <div class="portfolio-img">
-            <img src="./assets/projects/" alt="image" />
+          <div class="portfolio-img-item">
+            <img
+              class="portfolio-img"
+              src="../dist/assets/stock.jpeg"
+              alt="image"
+            />
             <div class="code-source-demo">
-              <ul>
+              <ul class="code-ul">
                 <li>
-                  <a>
-                    <i class="fab fa-github-square"></i>
+                  <span>
+                    <i class="fab fa-github-square private"></i>
                     Private
-                  </a>
+                  </span>
                 </li>
               </ul>
             </div>
@@ -239,10 +288,14 @@
         </div>
 
         <div class="portfolio-item">
-          <div class="portfolio-img">
-            <img src="./assets/projects/" alt="image" />
+          <div class="portfolio-img-item has-margin-right">
+            <img
+              class="portfolio-img"
+              src="../dist/assets/profile-img.jpg"
+              alt="image"
+            />
             <div class="code-source-demo">
-              <ul>
+              <ul class="code-ul">
                 <li>
                   <a
                     href="https://github.com/ImInYourPie/urban-shelf"
@@ -274,25 +327,25 @@
               and author. Working fine calculator based on days late.
             </p>
             <h5>The Stack</h5>
-            <ul>
+            <ul class="stack-ul">
               <li class="stack-list">
-                <p>HTML</p>
+                <p><i class="fab fa-html5"></i> HTML</p>
               </li>
               <li class="stack-list">
-                <p>CSS</p>
+                <p><i class="fab fa-css3-alt"></i> CSS</p>
               </li>
               <li class="stack-list">
-                <p>Javascript</p>
+                <p><i class="fab fa-js-square"></i> Javascript</p>
               </li>
               <li class="stack-list">
-                <p>Bootstrap</p>
+                <p><i class="fab fa-bootstrap"></i> Bootstrap</p>
               </li>
             </ul>
           </div>
         </div>
 
         <div class="portfolio-item">
-          <div class="portfolio-description">
+          <div class="portfolio-description has-margin-right">
             <h6>Full Stack</h6>
             <h1>Weez</h1>
             <h5>The Project</h5>
@@ -301,25 +354,43 @@
               questions about subjects and get rewarded. Gamification heavy.
             </p>
             <h5>The Stack</h5>
-            <ul>
+            <ul class="stack-ul">
               <li class="stack-list">
-                <p>Vue.js</p>
+                <p><i class="fab fa-vuejs"></i> Vue.js</p>
               </li>
               <li class="stack-list">
-                <p>Express</p>
+                <p><i class="fab fa-node-js"></i> Express</p>
               </li>
               <li class="stack-list">
-                <p>MongoDB</p>
+                <p>
+                  <img
+                    class="svg-icon"
+                    src="../dist/assets/icons/Mongodb.svg"
+                    alt="mongo-icon"
+                  />
+                  MongoDB
+                </p>
               </li>
               <li class="stack-list">
-                <p>Bulma</p>
+                <p>
+                  <img
+                    class="svg-icon"
+                    src="../dist/assets/icons/bulma.svg"
+                    alt="mongo-icon"
+                  />
+                  Bulma
+                </p>
               </li>
             </ul>
           </div>
-          <div class="portfolio-img">
-            <img src="./assets/projects/" alt="image" />
+          <div>
+            <img
+              class="portfolio-img"
+              src="../dist/assets/stock.jpeg"
+              alt="image"
+            />
             <div class="code-source-demo">
-              <ul>
+              <ul class="code-ul">
                 <li>
                   <a
                     href="https://github.com/ImInYourPie/Weez-Production"
@@ -345,7 +416,7 @@
       </div>
     </section>
 
-    <section class="about" id="about">
+    <!-- <section class="about" id="about">
       <div class="container">
         <div class="about-img">
           <img class="img" src="./assets/profile-img.jpg" alt="me" />
@@ -385,7 +456,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="contact" id="contact">
       <div class="container">
@@ -418,14 +489,9 @@
             rows="10"
             required
           ></textarea>
+          <input type="submit" value="Send" />
         </form>
       </div>
     </section>
-
-    <script
-      src="https://kit.fontawesome.com/d1ebf8497a.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="main.js"></script>
   </body>
 </html>
