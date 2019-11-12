@@ -1,6 +1,6 @@
 @font-face {
   font-family: Quicksand;
-  src: url("/dist/assets/fonts/Quicksand-Regular.otf") format("opentype");
+  src: url("../dist/assets/fonts/Quicksand-Regular.otf") format("opentype");
 }
 
 /* Scrollbar */
@@ -9,10 +9,10 @@
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
-}
+} */
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -39,6 +39,10 @@ body {
   height: 100%;
   background-color: #ffffff;
   background-size: cover;
+}
+
+section {
+  padding: 6rem;
 }
 
 a {
@@ -105,6 +109,10 @@ img {
 .section-heading h6 {
   font-size: 1.5rem;
   opacity: 0.3;
+}
+
+.has-margin-right {
+  margin-right: 5rem;
 }
 
 /* Background fill TESTING!!! */
@@ -280,10 +288,11 @@ li {
   flex: 1;
   margin-right: 5rem;
   justify-content: center;
+  align-items: center;
 }
 
 .img {
-  width: 100%;
+  width: 50rem;
 }
 
 .about-text {
@@ -328,6 +337,7 @@ li {
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 2.5rem;
   text-align: center;
+  padding-bottom: 5rem; /* REMOVE IF MY-SKILLS-2 ACTIVE */
 }
 
 .my-skills-2 {
@@ -357,10 +367,14 @@ li {
   letter-spacing: 2px;
 }
 
+.skills {
+  background-color: whitesmoke;
+}
+
 .icon-container {
   border-radius: 75%;
-  width: 10rem;
-  height: 10rem;
+  width: 15rem;
+  height: 15rem;
   border: 3px solid #fddb27ff;
   background-color: #ff3ea5ff;
   margin-bottom: 2rem;
@@ -369,7 +383,7 @@ li {
 
 .icon-container i {
   color: #fddb27ff;
-  font-size: 5rem;
+  font-size: 7rem;
   margin: auto;
 }
 /*  */
@@ -386,4 +400,186 @@ li {
 }
 
 .portfolio-img {
+  flex: 1;
+  width: 70vh;
+  height: 50vh;
 }
+
+.portolio-description {
+  flex: 1;
+  flex-grow: initial;
+}
+
+.stack-ul {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.portfolio-description h6 {
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+.portfolio-description h6 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.portfolio-description h5 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+
+.portfolio-description h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #fddb27ff;
+}
+
+@media only screen and (max-width: 900px) {
+  .portfolio-item {
+    flex-direction: column;
+  }
+
+  .about-item {
+    flex-direction: column;
+  }
+
+  .has-margin-right {
+    margin-right: 0;
+  }
+}
+
+.code-source-code {
+}
+
+.code-ul {
+  list-style: none;
+  font-size: 1.5rem;
+  justify-content: left;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  margin-top: 2rem;
+}
+
+.code-ul a {
+  color: #fddb27ff;
+  border: 0.2rem solid;
+  border-radius: 3rem;
+  padding: 0.4rem;
+  background-color: #ff3ea5ff;
+}
+
+.code-ul span {
+  color: #fddb27ff;
+  border: 0.2rem solid;
+  border-radius: 1rem;
+  padding: 0.4rem;
+  background-color: #ff3ea5ff;
+  opacity: 0.3;
+}
+
+.private,
+.private:hover,
+.private:focus {
+  color: #fddb27ff;
+}
+
+.code-ul span:hover {
+  cursor: default;
+}
+
+.code-ul a:focus,
+.code-ul a:hover {
+  color: #ff3ea5ff;
+  background-color: #fddb27ff;
+}
+
+.portfolio-img-item {
+}
+
+/* Contact */
+.contact {
+  background-color: whitesmoke;
+  padding-bottom: 10rem;
+}
+
+form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+form label {
+  font-size: 1.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 5px;
+  border: none;
+  outline-color: #ff3ea5ff;
+}
+
+input[type="submit"] {
+  width: initial;
+  background-color: #fddb27ff;
+  color: #ff3ea5ff;
+  border: solid 0.2rem #ff3ea5ff;
+  border-radius: 0.4rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background-color 650ms;
+}
+
+input[type="submit"]:hover {
+  color: #fddb27ff;
+  background-color: #ff3ea5ff;
+}
+/*  */
+
+/* Icons */
+.svg-icon {
+  height: 16px;
+  width: 16px;
+}
+
+.fa-node-js {
+  color: green;
+}
+
+.fa-vuejs {
+  color: #42b883;
+}
+
+.fa-react {
+  color: #61dbfb;
+}
+
+.fa-html5 {
+  color: #e34f26;
+}
+
+.fa-bootstrap {
+  color: #602c50;
+}
+
+.fa-js-square {
+  color: #f0db4f;
+}
+
+.fa-css3-alt {
+  color: #264de4;
+}
+/*  */
