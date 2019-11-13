@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Quicksand;
-  src: url("../dist/assets/fonts/Quicksand-Regular.otf") format("opentype");
+  font-family: "Quicksand";
+  src: url("/dist/assets/fonts/Quicksand-Regular.otf");
 }
 
 /* Scrollbar */
@@ -31,18 +31,18 @@
 html {
   font-size: 10px;
   font-family: "Roboto", sans-serif;
-  color: #000;
+  color: #fff;
 }
 
 body {
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #1a1a1d;
   background-size: cover;
 }
 
 section {
-  padding: 6rem;
+  padding: 6rem 0;
 }
 
 a {
@@ -75,7 +75,7 @@ img {
 
 .section-heading h1 {
   font-size: 3.5rem;
-  color: #00a4ccff;
+  color: #fff;
   text-transform: uppercase;
   font-weight: 300;
   position: relative;
@@ -134,7 +134,7 @@ header {
   position: fixed;
   top: -100vh;
   z-index: 50;
-  background-color: #00a4ccff;
+  background-color: #000;
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
   transition: all 650ms cubic-bezier(1, 0, 0, 1);
@@ -157,7 +157,7 @@ li {
 }
 
 .nav-link {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand";
   font-size: 5rem;
   padding: 1rem;
 }
@@ -256,13 +256,14 @@ li {
   font-size: 2rem;
   font-weight: 300;
   font-family: "Quicksand", sans-serif;
-  color: #00a4ccff;
+  color: #fff;
 }
 /*  */
 
 /* Âbout */
 .about .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   align-items: center;
   justify-content: center;
 }
@@ -282,6 +283,11 @@ li {
 .about-heading h6 {
   font-size: 2rem;
   font-weight: 300;
+}
+
+.about p {
+  text-justify: inter-word;
+  text-align: center;
 }
 
 .about-img {
@@ -332,12 +338,11 @@ li {
 
 /* Skills */
 .my-skills-1 {
-  margin-top: 5rem;
+  margin-top: 10rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 2.5rem;
   text-align: center;
-  padding-bottom: 5rem; /* REMOVE IF MY-SKILLS-2 ACTIVE */
 }
 
 .my-skills-2 {
@@ -365,11 +370,12 @@ li {
 .skill h1 {
   text-transform: uppercase;
   letter-spacing: 2px;
+  margin: 2rem -2px 2rem 0;
 }
 
-.skills {
+/* .skills {
   background-color: whitesmoke;
-}
+} */
 
 .icon-container {
   border-radius: 75%;
@@ -399,15 +405,12 @@ li {
   margin-bottom: 0;
 }
 
-.portfolio-img {
+.portfolio-img-item {
   flex: 1;
-  width: 70vh;
-  height: 50vh;
 }
 
-.portolio-description {
+.portfolio-description {
   flex: 1;
-  flex-grow: initial;
 }
 
 .stack-ul {
@@ -420,15 +423,15 @@ li {
 }
 
 .portfolio-description h6 {
-  font-weight: 300;
-  margin: 1rem 0;
-}
-
-.portfolio-description h6 {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 300;
   opacity: 0.5;
+}
+
+.portfolio-description p {
+  text-justify: inter-word;
+  text-align: justify;
 }
 
 .portfolio-description h5 {
@@ -445,45 +448,32 @@ li {
   color: #fddb27ff;
 }
 
-@media only screen and (max-width: 900px) {
-  .portfolio-item {
-    flex-direction: column;
-  }
-
-  .about-item {
-    flex-direction: column;
-  }
-
-  .has-margin-right {
-    margin-right: 0;
-  }
-}
-
 .code-source-code {
 }
 
 .code-ul {
   list-style: none;
   font-size: 1.5rem;
-  justify-content: left;
+
   display: flex;
-  justify-content: center;
-  align-items: left;
+  justify-content: flex-start;
   margin-top: 2rem;
+}
+
+.code-ul li {
+  margin: 1rem;
 }
 
 .code-ul a {
   color: #fddb27ff;
-  border: 0.2rem solid;
-  border-radius: 3rem;
+  border-radius: 0.4rem;
   padding: 0.4rem;
   background-color: #ff3ea5ff;
 }
 
 .code-ul span {
   color: #fddb27ff;
-  border: 0.2rem solid;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   padding: 0.4rem;
   background-color: #ff3ea5ff;
   opacity: 0.3;
@@ -505,12 +495,9 @@ li {
   background-color: #fddb27ff;
 }
 
-.portfolio-img-item {
-}
-
 /* Contact */
 .contact {
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
   padding-bottom: 10rem;
 }
 
@@ -527,16 +514,16 @@ input,
 textarea {
   width: 100%;
   padding: 1rem;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   border: none;
+  border-radius: 0.4rem;
   outline-color: #ff3ea5ff;
 }
 
 input[type="submit"] {
   width: initial;
-  background-color: #fddb27ff;
-  color: #ff3ea5ff;
-  border: solid 0.2rem #ff3ea5ff;
+  background-color: #ff3ea5ff;
+  color: #fddb27ff;
   border-radius: 0.4rem;
   padding: 1rem 2rem;
   cursor: pointer;
@@ -544,9 +531,134 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  color: #fddb27ff;
-  background-color: #ff3ea5ff;
+  color: #ff3ea5ff;
+  background-color: #fddb27ff;
 }
+/*  */
+
+/* Footer */
+.footer {
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.up {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  background-color: #ff3ea5ff;
+  top: -2.5rem;
+  right: 5rem;
+  border-radius: 100%;
+  display: flex;
+  animation: pulse 2s infinite;
+  -webkit-animation: pulse 2s infinite;
+}
+
+.up i {
+  color: #fddb27ff;
+  font-size: 2rem;
+  margin: auto;
+}
+
+.footer p {
+  font-size: 1.5rem;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 62, 165, 0.99);
+  }
+  70% {
+    box-shadow: 0 0 0 2rem rgba(255, 62, 165, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 62, 165, 0);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 62, 165, 0.99);
+  }
+  70% {
+    box-shadow: 0 0 0 2rem rgba(255, 62, 165, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 62, 165, 0);
+  }
+}
+
+@-moz-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 62, 165, 0.99);
+  }
+  70% {
+    box-shadow: 0 0 0 2rem rgba(255, 62, 165, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 62, 165, 0);
+  }
+}
+
+/*  */
+
+/* Screen sizes */
+
+@media screen and (max-width: 768px) {
+  .landing-text h1 {
+    font-size: 15rem;
+  }
+
+  .landing-text h6 {
+    font-size: 1.5rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .my-skills-1 {
+    flex-direction: column;
+  }
+
+  .nav-list li {
+    margin: 2rem 0;
+  }
+
+  .nav-links {
+    font-size: 4.5rem;
+  }
+
+  .about-heading h1 {
+    font-size: 8rem;
+  }
+
+  .section-heading h1 {
+    font-size: 3rem;
+  }
+
+  .about-details .nav-list {
+    flex-direction: initial;
+  }
+
+  .about-details li {
+    margin: 0 2rem;
+  }
+
+  .icon-container {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .icon-container i {
+    font-size: 4rem;
+  }
+}
+
 /*  */
 
 /* Icons */

@@ -1,4 +1,4 @@
-require("./index.css");
+import "./index.css";
 
 window.onload = function() {
   let menuToggler = document.getElementsByClassName("menu-toggler")[0];
