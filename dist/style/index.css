@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Quicksand";
-  src: url("/dist/assets/fonts/Quicksand-Regular.otf");
+  src: url("../assets/fonts/Quicksand-Regular.otf");
 }
 
 /* Scrollbar */
@@ -157,7 +157,7 @@ li {
 }
 
 .nav-link {
-  font-family: "Quicksand";
+  font-family: "Quicksand", sans-serif;
   font-size: 5rem;
   padding: 1rem;
 }
