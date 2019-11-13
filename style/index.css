@@ -454,9 +454,8 @@ li {
 .code-ul {
   list-style: none;
   font-size: 1.5rem;
-
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   margin-top: 2rem;
 }
 
@@ -656,6 +655,55 @@ input[type="submit"]:hover {
 
   .icon-container i {
     font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu-toggler {
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .landing-text h1 {
+    font-size: 8rem;
+  }
+
+  .landing-text h6 {
+    font-size: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 3.5rem;
+  }
+
+  .about .container {
+    flex-direction: column;
+  }
+
+  .portfolio-item {
+    flex-direction: column;
+  }
+
+  .portfolio-img-item {
+    margin: 0 0 2rem 0;
+    order: 1;
+  }
+
+  .portfolio-description {
+    margin: 0;
+    order: 2;
+  }
+
+  .stack-ul {
+    display: grid;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .up {
+    right: 2rem;
   }
 }
 
