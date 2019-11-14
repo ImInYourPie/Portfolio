@@ -551,6 +551,28 @@ input[type="submit"]:hover {
   -webkit-animation: pulse 2s infinite;
 }
 
+.cv-link {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  width: 10rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 5%;
+  background: linear-gradient(30deg, #ff3ea5ff, #fddb27ff);
+}
+
+.cv-link a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin: auto;
+  text-transform: uppercase;
+}
+
 .up:hover {
   cursor: pointer;
 }
@@ -660,6 +682,11 @@ input[type="submit"]:hover {
   .menu-toggler {
     top: 2rem;
     right: 2rem;
+  }
+
+  .cv-link {
+    top: 2rem;
+    left: 2rem;
   }
 
   .landing-text h1 {
