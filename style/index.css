@@ -32,6 +32,7 @@ html {
   font-size: 10px;
   font-family: "Roboto", sans-serif;
   color: #fff;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -266,6 +267,7 @@ li {
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   align-items: center;
   justify-content: center;
+  margin-top: 5rem;
 }
 
 .about-heading {
@@ -322,7 +324,7 @@ li {
   color: #2867b2;
 }
 
-.fa-github-square:hover {
+.social-github:hover {
   color: #6e5494;
 }
 
@@ -401,10 +403,6 @@ li {
   margin-bottom: 5rem;
 }
 
-.portfolio-item:last-child {
-  margin-bottom: 0;
-}
-
 .portfolio-img-item {
   flex: 1;
 }
@@ -448,9 +446,6 @@ li {
   color: #fddb27ff;
 }
 
-.code-source-code {
-}
-
 .code-ul {
   list-style: none;
   font-size: 1.5rem;
@@ -464,17 +459,17 @@ li {
 }
 
 .code-ul a {
-  color: #fddb27ff;
+  color: #fff;
   border-radius: 0.4rem;
   padding: 0.4rem;
-  background-color: #ff3ea5ff;
+  background: linear-gradient(30deg, #ff3ea5ff, #fddb27ff);
 }
 
 .code-ul span {
-  color: #fddb27ff;
+  color: #fff;
   border-radius: 0.4rem;
   padding: 0.4rem;
-  background-color: #ff3ea5ff;
+  background: linear-gradient(30deg, #ff3ea5ff, #fddb27ff);
   opacity: 0.3;
 }
 
@@ -491,7 +486,6 @@ li {
 .code-ul a:focus,
 .code-ul a:hover {
   color: #ff3ea5ff;
-  background-color: #fddb27ff;
 }
 
 /* Contact */
@@ -555,6 +549,10 @@ input[type="submit"]:hover {
   display: flex;
   animation: pulse 2s infinite;
   -webkit-animation: pulse 2s infinite;
+}
+
+.up:hover {
+  cursor: pointer;
 }
 
 .up i {
