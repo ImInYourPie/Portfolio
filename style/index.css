@@ -242,7 +242,7 @@ li {
 }
 
 .landing-text h1 {
-  font-size: 10rem;
+  font-size: 15rem;
   font-family: "Quicksand", sans-serif;
   font-weight: 300;
   background: linear-gradient(30deg, #ff3ea5ff, #fddb27ff);
@@ -254,7 +254,7 @@ li {
 }
 
 .landing-text h6 {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 300;
   font-family: "Quicksand", sans-serif;
   color: #fff;
@@ -340,7 +340,6 @@ li {
 
 /* Skills */
 .my-skills-1 {
-  margin-top: 10rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 2.5rem;
@@ -383,14 +382,15 @@ li {
   border-radius: 75%;
   width: 15rem;
   height: 15rem;
-  border: 3px solid #fddb27ff;
-  background-color: #ff3ea5ff;
+  /* border: 3px solid #fddb27ff;
+  background-color: #ff3ea5ff; */
+  background: linear-gradient(30deg, #ff3ea5ff, #fddb27ff);
   margin-bottom: 2rem;
   display: flex;
 }
 
 .icon-container i {
-  color: #fddb27ff;
+  color: #fff;
   font-size: 7rem;
   margin: auto;
 }
@@ -400,11 +400,17 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin: auto;
+  margin-bottom: 10rem;
 }
 
 .portfolio-img-item {
   flex: 1;
+}
+
+.portfolio-img {
+  vertical-align: middle;
+  background-size: cover;
 }
 
 .portfolio-description {
@@ -476,7 +482,7 @@ li {
 .private,
 .private:hover,
 .private:focus {
-  color: #fddb27ff;
+  color: #fff;
 }
 
 .code-ul span:hover {
@@ -515,8 +521,8 @@ textarea {
 
 input[type="submit"] {
   width: initial;
-  background-color: #ff3ea5ff;
-  color: #fddb27ff;
+  background: linear-gradient(30deg, #ff3ea5ff, #fddb27ff);
+  color: #fff;
   border-radius: 0.4rem;
   padding: 1rem 2rem;
   cursor: pointer;
@@ -525,7 +531,6 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   color: #ff3ea5ff;
-  background-color: #fddb27ff;
 }
 /*  */
 
@@ -542,7 +547,7 @@ input[type="submit"]:hover {
   position: absolute;
   width: 5rem;
   height: 5rem;
-  background-color: #ff3ea5ff;
+  background: linear-gradient(30deg, #ff3ea5ff, #fddb27ff);
   top: -2.5rem;
   right: 5rem;
   border-radius: 100%;
@@ -573,12 +578,16 @@ input[type="submit"]:hover {
   text-transform: uppercase;
 }
 
+.cv-link a:hover {
+  color: #ff3ea5ff;
+}
+
 .up:hover {
   cursor: pointer;
 }
 
 .up i {
-  color: #fddb27ff;
+  color: #fff;
   font-size: 2rem;
   margin: auto;
 }
