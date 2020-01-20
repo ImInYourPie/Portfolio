@@ -20,7 +20,7 @@
   <body>
     <header id="home">
       <div class="cv-link">
-        <a href="./assets/cv/CV_Miguel_Melo.pdf" download
+        <a href="./assets/cv/CV_Miguel_Melo.pdf" target="_blank" download
           ><i class="fas fa-file-download"></i> Curriculum</a
         >
       </div>
@@ -31,9 +31,10 @@
       </div>
       <nav class="top-nav">
         <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About Me</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li><a href="#more-than-myself" class="nav-link">More</a></li>
           <li><a href="#contact" class="nav-link">Contact Me</a></li>
         </ul>
       </nav>
@@ -48,6 +49,67 @@
         </div>
       </div>
     </header>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div
+          data-aos="fade ease-in-out"
+          data-aos-once="true"
+          data-aos-delay="600"
+          class="about-img"
+        >
+          <img src="./assets/profile-img.jpg" alt="me" />
+        </div>
+        <div class="about-text">
+          <div class="about-heading" data-aos="fade-in" data-aos-once="true">
+            <h1>About</h1>
+            <h6>Myself</h6>
+          </div>
+          <div data-aos="fade-in" data-aos-delay="300" data-aos-once="true">
+            <p>
+              Hello, I am Miguel Melo! I am a full stack developer based in the
+              city of Porto, Portugal.
+            </p>
+            <br />
+            <p>
+              I didn't start my relationship with programming the right way,
+              having dropped out of university because I lacked the passion for
+              it. I did eventually come back and found that we ourselves have to
+              find the passion in what we do and make it grow, and that is
+              exactly what I did, and after persevering I now love what I do,
+              and want to grow in, and with, the world of programming.
+            </p>
+            <br />
+            <p>
+              I like to think that after being lost, I ended up exactly where I
+              should be.
+            </p>
+          </div>
+          <div class="social-media">
+            <ul class="social-media-list">
+              <li data-aos="fade-up" data-aos-delay="600" data-aos-once="true">
+                <a href="https://github.com/ImInYourPie" target="_blank">
+                  <i class="fab fa-github-square social-github"></i>
+                </a>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="900" data-aos-once="true">
+                <a
+                  href="https://www.linkedin.com/in/dmiguelmelo/"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="1200" data-aos-once="true">
+                <a href="https://www.facebook.com/mutts30" target="_blank">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="skills" id="skills">
       <div class="background-fill">
@@ -497,57 +559,86 @@
       </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="more-than-myself" id="more-than-myself">
       <div class="container">
-        <!-- <div class="about-img">
-          <img class="img" src="./assets/profile-img.jpg" alt="me" />
-        </div> -->
-        <div class="about-text">
-          <div class="about-heading" data-aos="fade-in" data-aos-once="true">
-            <h1>About</h1>
-            <h6>Myself</h6>
-          </div>
-          <div data-aos="fade-in" data-aos-delay="300" data-aos-once="true">
-            <p>
-              Hello, I am Miguel Melo! I am a full stack developer based in the
-              city of Porto, Portugal.
-            </p>
-            <br />
-            <p>
-              I didn't start my relationship with programming the right way,
-              having dropped out of university because I lacked the passion for
-              it. I did eventually come back to university and found that we
-              ourselves have to find the passion in what we do and make it grow,
-              and that is exactly what I did, and after persevering I now love
-              it and want to grow in, and with, the world of programming.
-            </p>
-            <br />
-            <p>
-              I like to think that after being lost, I ended up exactly where I
-              should be.
-            </p>
-          </div>
-          <div class="social-media">
-            <ul class="social-media-list">
-              <li data-aos="fade-up" data-aos-delay="600" data-aos-once="true">
-                <a href="https://github.com/ImInYourPie" target="_blank">
-                  <i class="fab fa-github-square social-github"></i>
-                </a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="900" data-aos-once="true">
-                <a
-                  href="https://www.linkedin.com/in/dmiguelmelo/"
-                  target="_blank"
-                >
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="1200" data-aos-once="true">
-                <a href="https://www.facebook.com/mutts30" target="_blank">
-                  <i class="fab fa-facebook-square"></i>
-                </a>
-              </li>
-            </ul>
+        <div
+          class="section-heading"
+          data-aos="fade-in"
+          data-aos-delay="300"
+          data-aos-once="true"
+        >
+          <h1>More Than Myself</h1>
+          <h6>Thank you all for making me what I am</h6>
+          <div class="gallery">
+            <figure
+              class="gallery__item gallery__item--1"
+              data-aos="fade-in"
+              data-aos-once="true"
+            >
+              <img
+                src="./assets/cunha.jpg"
+                class="gallery__img"
+                alt="Image 1"
+              />
+            </figure>
+            <figure
+              data-aos="fade-in"
+              data-aos-once="true"
+              class="gallery__item gallery__item--2"
+            >
+              <img src="./assets/ines.jpg" class="gallery__img" alt="Image 2" />
+            </figure>
+            <figure
+              data-aos="fade-in"
+              data-aos-once="true"
+              class="gallery__item gallery__item--3"
+            >
+              <img src="./assets/sara.jpg" class="gallery__img" alt="Image 3" />
+            </figure>
+            <figure
+              data-aos="fade-in"
+              data-aos-once="true"
+              class="gallery__item gallery__item--4"
+            >
+              <img
+                src="./assets/garrido.jpg"
+                class="gallery__img"
+                alt="Image 4"
+              />
+            </figure>
+            <figure
+              data-aos="fade-in"
+              data-aos-once="true"
+              class="gallery__item gallery__item--5"
+            >
+              <img
+                src="./assets/friends.jpg"
+                class="gallery__img"
+                alt="Image 6"
+              />
+            </figure>
+            <figure
+              data-aos="fade-in"
+              data-aos-once="true"
+              class="gallery__item gallery__item--6"
+            >
+              <img
+                src="./assets/mutts.jpg"
+                class="gallery__img"
+                alt="Image 5"
+              />
+            </figure>
+            <figure
+              data-aos="fade-in"
+              data-aos-once="true"
+              class="gallery__item gallery__item--7"
+            >
+              <img
+                src="./assets/avoMae.jpg"
+                class="gallery__img"
+                alt="Image 6"
+              />
+            </figure>
           </div>
         </div>
       </div>
